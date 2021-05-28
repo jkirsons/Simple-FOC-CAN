@@ -43,9 +43,9 @@ void _transmitCAN(uint32_t identifier, uint8_t *data, uint8_t length) {
 
     //Queue message for transmission
     if (can_transmit(&message, pdMS_TO_TICKS(1)) == ESP_OK) {
-        printf("Message queued for transmission\n");
+        //printf("Message queued for transmission\n");
     } else {
-        printf("Failed to queue message for transmission\n");
+        //printf("Failed to queue message for transmission\n");
     }
 }
 
